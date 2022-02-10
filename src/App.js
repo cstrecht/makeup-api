@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { getProductsByTypeAndTags } from "./common/makeupAPI.js";
 
 function App() {
+  getProductsByTypeAndTags("lipstick", "vegan");
   return (
     <div className="App">
       <header className="App-header">
