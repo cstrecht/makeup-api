@@ -9,7 +9,7 @@ import { getProductsByTypeAndTags } from "../common/makeupAPI";
 import "./Products-grid.css";
 
 export default function ProductsGrid() {
-  const [searchParams] = useSearchParams(); //To "change" the URL
+  const [searchParams] = useSearchParams(); //To use the params in the URL
   const tagParam = searchParams.get("tags");
   const { categoryType } = useParams();
   const [products, setProducts] = useState([]);
@@ -29,8 +29,22 @@ export default function ProductsGrid() {
     <div>
       <div className="products-grid">
         {products.map((product) => (
-          <div className="grid-item" onClick={() => routeChange(product.id)}>
-            <img alt={product.name} src={product.image_link} width="100"></img>
+          <div
+            key={`product_${product.id}`}
+            className="grid-item"
+            onClick={() => routeChange(product.id)}
+          >
+            <img
+              onError={({ currentTarget }) => {
+                currentTarget.onerror = null; // prevents looping
+                currentTarget.src =
+                  "https://www.trendsetter.com/pub/media/catalog/product/placeholder/default/no_image_placeholder.jpg";
+              }}
+              alt={product.name}
+              src={product.image_link}
+              width="100"
+            ></img>
+
             <p
               style={{
                 fontWeight: "bold",

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import { getProductTags } from "../common/product_tags";
 import "./Products-FilterList.css";
 
 export default function FilterList() {
+  // disable linter rule for the following line
+  // since we have to declase searchParams to react-router
+  // useSearchParams() works properly.
+  // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
   const { categoryType } = useParams();
   const tags = getProductTags();
@@ -16,14 +20,9 @@ export default function FilterList() {
       <div className="checkbox">
         <ul>
           {tags.map((tag) => (
-            <li>
-              <input
-                key={tag}
-                value={tag}
-                type="checkbox"
-                className="tag"
-              ></input>
-              {tag}
+            <li key={tag.id}>
+              <input value={tag.id} type="checkbox" className="tag"></input>
+              {tag.name}
             </li>
           ))}
         </ul>

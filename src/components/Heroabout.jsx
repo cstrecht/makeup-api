@@ -6,7 +6,7 @@ export default function Heroabout() {
     <div className="about-container">
       <div className="about-header">
         <h1 className="about-title">About us</h1>
-        <h2 className="about-subtitle">text text text text </h2>
+        <h2 className="about-subtitle">Lorem ipsum, dolor sit ae</h2>
       </div>
       <p className="description">
         As much mud in the streets as if the waters had but newly retired from

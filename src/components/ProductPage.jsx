@@ -45,6 +45,11 @@ export default function ProductPage() {
         </div>
         <div className="product-right">
           <img
+            onError={({ currentTarget }) => {
+              currentTarget.onerror = null; // prevents looping
+              currentTarget.src =
+                "https://www.trendsetter.com/pub/media/catalog/product/placeholder/default/no_image_placeholder.jpg";
+            }}
             alt={product.name}
             src={product.image_link}
             className="product-image"
