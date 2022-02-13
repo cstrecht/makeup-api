@@ -1,0 +1,50 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  left: 1px;
+}
+.filterby {
+  margin-bottom: 0px;
+}
+.checkbox {
+  width: auto;
+  height: auto;
+  float: left;
+}
+button {
+  display: inline-block;
+  background-color: #3e6ed9;
+  padding: 0.35em 1.2em;
+  border: #3e6ed9;
+  margin: 0 1em 1em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #e0e0e0;
+  text-align: center;
+  transition: all 0.2s;
+  font-family: "Playfair Display", serif;
+}
+button:hover {
+  color: white;
+  background-color: rgb(45, 45, 184);
+  cursor: pointer;
+}
+ul {
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+li {
+  padding: 0px;
+  list-style: none;
+  height: auto;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}

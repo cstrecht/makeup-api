@@ -1,0 +1,12 @@
+.contact-container {
+  margin-left: 30px;
+}
+footer {
+  position: fixed;
+  text-align: center;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}

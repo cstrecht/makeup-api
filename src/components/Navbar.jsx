@@ -1,11 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/`;
+    navigate(path);
+  };
   return (
-    <nav>
-      <Link to="/category">Categories</Link> | <Link to="/about">About</Link> |{" "}
-      <Link to="/contact">Contact</Link>
+    <nav className="navbar">
+      <h1 className="logo" onClick={routeChange}>
+        CHIRO &#xe32e;
+      </h1>
+      <div className="navlinks">
+        <Link className="navbar_link" to="/category">
+          Categories
+        </Link>{" "}
+        <Link className="navbar_link" to="/about">
+          About
+        </Link>{" "}
+        <Link className="navbar_link" to="/contact">
+          Contact
+        </Link>
+      </div>
     </nav>
   );
 }

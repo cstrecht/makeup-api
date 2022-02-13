@@ -1,0 +1,18 @@
+.about-header {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  text-align: end;
+}
+.about-title {
+  font-size: 80px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.about-subtitle {
+  margin: 0;
+}
+.description {
+  width: 70%;
+  margin-left: 5%;
+}
