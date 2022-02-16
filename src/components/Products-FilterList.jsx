@@ -13,7 +13,6 @@ export default function FilterList() {
 
   return (
     <div className="filter-container">
-      {/* Beggining of the filter list */}
       <p
         style={{
           margin: "0",
@@ -54,13 +53,12 @@ export default function FilterList() {
         {/* Clear button */}
         <button
           onClick={() => {
-            var inputs = document.querySelectorAll(".tag"); // clicking on the checkboxes
-            let selected_tags = []; // at first there are no selected tags
+            var inputs = document.querySelectorAll(".tag");
+            let selected_tags = [];
             for (let input of inputs) {
               if (input.checked) {
-                //checked is a param that comes with the API
                 input.checked = false;
-                selected_tags.pop(input.defaultValue); // if it is "checked", add to id the defaultValue (also comes with the API)
+                selected_tags.pop(input.defaultValue);
               }
             }
             let url_tags = selected_tags.join(",");

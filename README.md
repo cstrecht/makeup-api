@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# CHIRO MAKEUP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CHIRO is a fictional and responsive makeup website where you can find makeup from different brands organized by their categories and specific tags.
 
-## Available Scripts
+## Running the project
 
-In the project directory, you can run:
+You can fork this GitHub repository and run `npm start` to run the app in the development mode. Open http://localhost:3000 to view it in your browser.
 
-### `npm start`
+## About this project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project was made with [React Router](https://reactrouter.com/) (and with the help of this [tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial)), using the [Makeup API](https://makeup-api.herokuapp.com/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This was my first project using React library. I chose to use it because I was learning about it and thought this was the perfect time to put it to practice, instead of doing the project using only Vanilla Javascript.
 
-### `npm test`
+Having that in mind, I needed to route my pages so I decided to use React Router to make it easier for me.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For the API request, I learned about [Axios](https://axios-http.com/docs/example) and decided to use it to perform a GET request to the API, basically because it was more simple for me to understand what was going on.
 
-### `npm run build`
+This fictional website works as a "library" of makeup, where you can find a variety of products, organized by their type (blush, mascara, foundation, lip liner, etc) and a filter list where all the products can be filtered by tags (vegan, water-free, natural, cruelty-free, etc). All the products are displayed by their rating (on a scale of 0 to 100) and you can also check the available colors. Clicking on the product, you can read a description of it, and clicking on the button "Buy me here" will open a real page where you can buy the products.
+This project was very challenging and I had some little problems completing all of my goals (more about this topic below), but at the end of the day, I feel very proud of myself for what I accomplished. ☺️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was very challenging and I had some little problems completing all of my goals (more about this topic below), but at the end of the day, I feel very proud of myself for what I accomplished.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My struggles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Although I am very happy with the final result, I had some trouble with the following user issues:
 
-### `npm run eject`
+- Paginating the products on the product section;
+- Show a loading screen when fetching the data.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I’m looking forward to doing better the next time :) (and I'll keep updating this repository while I am learning)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Responsiveness
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This code was built to be responsive on every screen.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+CSS can be very tricky sometimes. But this time I decided not to use any framework because my main focus was on the app navigation and making the API requests functional.
 
-## Learn More
+Here is a demo for the desktop version:
+![Alt Text](docs/static/desktop_presentation.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+And here is a demo for the mobile version:
+![alt-text](docs/static/mobile_presentation.gif)
