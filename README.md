@@ -37,7 +37,9 @@ This code was built to be responsive on every screen.
 CSS can be very tricky sometimes. But this time I decided not to use any framework because my main focus was on the app navigation and making the API requests functional.
 
 Here is a demo for the desktop version:
+
 ![Alt Text](docs/static/desktop_presentation.gif)
 
 And here is a demo for the mobile version:
+
 ![alt-text](docs/static/mobile_presentation.gif)
