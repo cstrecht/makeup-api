@@ -1,22 +1,23 @@
 body {
-  /* background-color: #f5f5f5; */
-  background: rgb(198, 198, 198);
+  background: rgb(125, 222, 245);
   background: -moz-linear-gradient(
     90deg,
-    rgba(198, 198, 198, 1) 0%,
+    rgba(125, 222, 245, 0.809943960494354) 0%,
     rgba(255, 255, 255, 1) 100%
   );
   background: -webkit-linear-gradient(
     90deg,
-    rgba(198, 198, 198, 1) 0%,
+    rgba(125, 222, 245, 0.809943960494354) 0%,
     rgba(255, 255, 255, 1) 100%
   );
   background: linear-gradient(
     90deg,
-    rgba(198, 198, 198, 1) 0%,
+    rgba(125, 222, 245, 0.809943960494354) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6c6c6",endColorstr="#ffffff",GradientType=1);
-  font-family: "Playfair Display", serif;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ddef5",endColorstr="#ffffff",GradientType=1);
+  font-family: "Nunito", sans-serif;
   color: black;
+  margin: 20px;
+  overflow-x: hidden;
 }

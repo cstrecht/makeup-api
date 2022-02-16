@@ -25,7 +25,7 @@ render(
         path="*"
         element={
           <main style={{ padding: "1rem" }}>
-            <p>There's nothing here!</p>
+            <p>There's nothing here ¯\_(ツ)_/¯ </p>
           </main>
         }
       />

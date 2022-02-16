@@ -6,10 +6,15 @@ export default function ContactPage() {
     <div className="contact-container">
       <div>
         <h1>This website is fictional</h1>
-        <h2>In fact, there is no makeup company called CHIRO.</h2>
+        <h3>There is no makeup company called CHIRO.</h3>
         <p>
-          This name came out in honor to "Chihiro", a fictional character from
-          the anime movie <em>Spirited Away</em>, by Hayao Miyazaki.
+          This name came out in honor of "Chihiro", a fictional character from
+          the movie <em>Spirited Away</em>. It was the first movie I saw in my
+          life (that I can remember).
+        </p>
+        <p>
+          Also, this is the first project that I did using React. Can you get
+          the connection? :)
         </p>
         <p>
           You can check the repository of this project{" "}
@@ -21,7 +26,7 @@ export default function ContactPage() {
             here.
           </a>
         </p>
-        <footer>designed and coded with &#9829; by carolina strecht</footer>
+        <footer>coded with &#9829; by carolina strecht</footer>
       </div>
     </div>
   );

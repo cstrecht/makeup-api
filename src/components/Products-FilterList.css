@@ -1,31 +1,22 @@
-.filter-container {
-  display: flex;
-  flex-direction: column;
-  left: 1px;
-}
-.filterby {
-  margin-bottom: 0px;
-}
-.checkbox {
+.filter-checkbox {
+  margin-top: 0px;
   width: auto;
   height: auto;
-  float: left;
 }
 button {
   display: inline-block;
   background-color: #3e6ed9;
-  padding: 0.35em 1.2em;
+  padding: 5px 10px;
   border: #3e6ed9;
   margin: 0 1em 1em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
   color: #e0e0e0;
   text-align: center;
   transition: all 0.2s;
-  font-family: "Playfair Display", serif;
+  font-family: "Nunito", serif;
 }
 button:hover {
   color: white;
@@ -34,17 +25,21 @@ button:hover {
 }
 ul {
   -moz-column-count: 4;
-  -moz-column-gap: 20px;
+  -moz-column-gap: 10px;
   -webkit-column-count: 4;
-  -webkit-column-gap: 20px;
+  -webkit-column-gap: 10px;
   column-count: 2;
   column-gap: 20px;
+  padding: 0;
 }
 li {
-  padding: 0px;
   list-style: none;
-  height: auto;
   font-size: 12px;
-  letter-spacing: 1px;
   margin-top: 0px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .filter-container {
+    display: none;
+  }
 }

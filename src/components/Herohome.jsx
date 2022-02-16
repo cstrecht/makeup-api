@@ -4,7 +4,7 @@ import "./Herohome.css";
 export default function Herohome() {
   return (
     <div className="hero-container">
-      <div>
+      <div className="hero-header">
         <h1 className="title">This is CHIRO</h1>
         <h2 className="subtitle">Beauty for everyone. Your time is now.</h2>
       </div>

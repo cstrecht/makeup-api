@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <h1 className="logo" onClick={routeChange}>
-        CHIRO &#xe32e;
+        CHIRO
       </h1>
       <div className="navlinks">
         <Link className="navbar_link" to="/category">

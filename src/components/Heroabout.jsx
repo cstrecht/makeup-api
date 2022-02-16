@@ -3,7 +3,7 @@ import "./Heroabout.css";
 
 export default function Heroabout() {
   return (
-    <div className="about-container">
+    <div>
       <div className="about-header">
         <h1 className="about-title">About us</h1>
         <h2 className="about-subtitle">Lorem ipsum, dolor sit ae</h2>
@@ -20,17 +20,12 @@ export default function Heroabout() {
         eu sem integer vitae justo eget. Duis at consectetur lorem donec massa.
         At varius vel pharetra vel. Eu sem integer vitae justo eget. Id cursus
         metus aliquamtesque diam volutpat commodo sed egestas egestas fringilla.
-        Consectetur adipiscing elit ut aliquam. Viverra adipiscing at in tellus
-        integer feugiat scelerisque varius morbi. Neque viverra justo nec
-        ultrices dui sapien eget mi. Enim diam vulputate ut pharetra. Auctor
-        elit sed vulputate mi. Vel quam elementum pulvinar etiam non quam lacus.
-        At quis risus sed vulputate odio ut. Amet est placerat in egestas erat
-        imperdiet sed euismod nisi. Pretium viverra suspendisse potenti nullam
-        ac tortor vitae purus. Arcu felis bibendum ut tristique. Egestas pretium
-        aenean pharetra magna ac placerat. Egestas purus viverra accumsan in
-        nisl nisi. Fames ac turpis egestas integer eget aliquet nibh praesent
-        tristique. Donec massa sapien faucibus et. Eu feugiat pretium nib
       </p>
+      <img
+        src="https://www.pngmart.com/files/17/Cosmetics-Product-PNG-Pic.png"
+        alt="Products of makeup"
+        className="about-image"
+      />
     </div>
   );
 }

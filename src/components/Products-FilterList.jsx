@@ -5,19 +5,23 @@ import "./Products-FilterList.css";
 
 export default function FilterList() {
   // disable linter rule for the following line
-  // since we have to declase searchParams to react-router
+  // since we have to declare searchParams to react-router
   // useSearchParams() works properly.
   // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
-  const { categoryType } = useParams();
   const tags = getProductTags();
 
   return (
     <div className="filter-container">
-      <h2 className="resultsfor">Your results for: {categoryType}</h2>
-      {/* Beggining of the list */}
-      <p className="filterby">Filter by:</p>
-      <div className="checkbox">
+      {/* Beggining of the filter list */}
+      <p
+        style={{
+          margin: "0",
+        }}
+      >
+        Filter by:
+      </p>
+      <div className="filter-checkbox">
         <ul>
           {tags.map((tag) => (
             <li key={tag.id}>

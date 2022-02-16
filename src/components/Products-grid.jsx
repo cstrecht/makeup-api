@@ -9,7 +9,7 @@ import { getProductsByTypeAndTags } from "../common/makeupAPI";
 import "./Products-grid.css";
 
 export default function ProductsGrid() {
-  const [searchParams] = useSearchParams(); //To use the params in the URL
+  const [searchParams] = useSearchParams();
   const tagParam = searchParams.get("tags");
   const { categoryType } = useParams();
   const [products, setProducts] = useState([]);
@@ -31,10 +31,14 @@ export default function ProductsGrid() {
         {products.map((product) => (
           <div
             key={`product_${product.id}`}
-            className="grid-item"
+            className="grid-item" //this is the 'card' of the product
             onClick={() => routeChange(product.id)}
           >
+            <p>
+              Category: <strong>{product.product_type}</strong>
+            </p>
             <img
+              className="products-image"
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping
                 currentTarget.src =
@@ -42,40 +46,26 @@ export default function ProductsGrid() {
               }}
               alt={product.name}
               src={product.image_link}
-              width="100"
             ></img>
 
-            <p
-              style={{
-                fontWeight: "bold",
-                margin: "0",
-              }}
-            >
-              {product.name.toUpperCase()}{" "}
-            </p>
-            <p
-              style={{
-                fontSize: "15px",
-                margin: "0",
-                color: "rgba(217, 200, 181, 1)",
-              }}
-            >
-              {product.brand}
-            </p>
-            <p
-              style={{
-                margin: "0",
-                fontSize: "15px",
-              }}
-            >
-              {product.price + " $"}
-            </p>
-            <p
-              style={{
-                margin: "0",
-              }}
-            >
-              {product.rating ? product.rating + " / 5" : "No rating"}
+            <p className="product-name">{product.name.toUpperCase()} </p>
+            <p className="product-brand">{product.brand}</p>
+            <p className="product-price">{product.price + " $"}</p>
+            <div className="product-pallete">
+              {product.product_colors.map((product_color) => (
+                <div
+                  className="color"
+                  style={{
+                    background: product_color.hex_value,
+                  }}
+                ></div>
+              ))}
+            </div>
+            <p className="product-rating">
+              {" "}
+              {product.rating
+                ? Math.round((product.rating * 100) / 5) + " /100"
+                : "No rating"}
             </p>
           </div>
         ))}
